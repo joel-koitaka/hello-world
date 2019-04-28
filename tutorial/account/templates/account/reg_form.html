@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+ <body style="background-color: #d24dff">
+	<br>
+	<br>
+	<div class="container">
+		<form method="post">
+			{% csrf_token %}
+			{{ form.as_p }}   <!--importing form as paragraph-->
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+	</body>
+{% endblock %}

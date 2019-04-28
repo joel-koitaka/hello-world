@@ -1,0 +1,197 @@
+ {% load static %}
+<!DOCTYPE html>
+<html>
+ 
+<head>
+<title>Workstation One</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="style.css">
+
+    <!--head contents from original base.html-->
+    <!-- bootstrap cdn-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">  <!-- add this to use bootstrap css files  This  will be used by all templates-->  
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("{% static 'img/edit-img/ocp-02.jpg' %}");
+  height: 100%;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 0.5%;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  height: 145px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 700px;/* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+  color: white;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 700px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+  height: auto;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 5px ;
+  text-align: center;
+  color: lightgreen;
+  position: relative;
+   
+  margin-top: -700px;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+ 
+<header>
+  <br>
+  <div class="row">
+      <div class="column" style="width: 20%;">
+      <a href="{% url 'back_home' %}"><img src="{% static 'img/edit-img/logo.jpeg' %}"></a>
+  </div>
+
+  <div class="column" style="width: 60%">
+      <h1 style="color: violet; margin-left: 5%;">Haegen Tech Remote Laboratories</h1>
+  </div>
+
+  <div class="column" style="width: 20%">
+    
+    <a href="javascript:history.go(-1)"  style="margin-left: 40%; background-color: green;" class="btn btn-info" role="button" type="submit"><h4>Back</h4></a>
+
+  </div>
+</div>
+ 	 
+</header>
+
+<section>
+
+  <nav>
+
+    <ul>
+      <h1>Experiments</h1>
+      <li><a href="experiment1">Experiment 1: Rectifier</a></li>
+      <li><a href="experiment2">Experiment 2: Logic Gates</a></li>
+      <li><a href="experiment3">Experiment 3: Schmitt Trigger</a></li>
+      <li><a href="#">Experiment Four</a></li>
+       
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 style="color: green;">Work station two </h1>
+    <p>This workstation has the following equipments:
+      <li>Tektronix Oscilloscope (OSC)</li>
+      <li> Tektronix Function Generator (FG)</li>
+      <li>Tektronix Multimeter (MM)</li>
+      <li>IDL</li>
+    </p>
+    <p>Select Experiment of your choice on your middle left page. This should lend you on the actual experiment page. You can download the instructions and the lab procedure/module for each experiment once you go to the actual experiment page. </p>
+
+    <h2 style="color: green;">Eqipments cannot be accessed simultaneously</h2>
+    <p>Make sure to reconfirm your schedule before start using our facilities. If our system detects simultanous access attempts, you will be automatically locked out until the workbench is deserted. However, you wont be denied acces thereafter. </p>
+    <p>Instructions on how to use the eqipments online are documented on your lab module. You can download for each experiment. </p>
+    <!-- inserting images-->
+  <div class="row">
+  <div class="column" style="margin-left: 10px">
+
+     
+    <img src="{% static 'img/edit-img/oscp-01.jpg' %}" alt="Oscilloscope" width= "375" height="240">
+    <h5 style="position: relative;"> Tektronix Oscilloscope</h5>
+  </div>
+  <div class="column">
+    <img src="{% static 'img/edit-img/fg-03.jpg' %}" alt="Function Generator" width= "375" height="240">
+    <h5 style="position: relative;"> Tektronix Function Generator</h5>  
+  </div>
+  <div class="column">
+    <img src="{% static 'img/edit-img/mm-01.jpg' %}" alt="Multimeter" width= "375"height="240">
+    <h5 style="position: relative;"> Tektronix Multimeter</h5>  
+  </div>
+</div>
+    
+  </article>
+</section>
+
+
+
+ <footer>
+   
+<div class="row">
+  <div class="column" style="width: 30%">
+    <a href="about"><p>About Us</p></a>
+  </div>
+  <div class="column" style="width: 30%">
+     <p>Address</p>
+     <p style="position: relative;"> 
+      The National University of Malaysia (UKM)
+      Department of Electrical, Electronics, Systems and Communications Engineering.
+      Haegen Tech Remote Laboratories
+      3600, Bangi, Selangor, Malaysia.
+      </p>
+  </div>
+  <div class="column" style="width: 30%">
+    <p>Contact</p>
+    <h6>Email<a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><h6 style="position: relative; margin-left: 20px;">haegentech@ukm.edu.my</h6></a></h6>
+    <h6 style="position: relative; margin-left: 20px;">Phone: 01160803623</h6>
+    <h6 style="position: relative; margin-left: 20px;">Phone: 01134803645</h6>
+  </div>
+</div>
+
+
+
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Haegen Tech 16300, Bangi University Kebangsaang Malaysia<i class="fa fa-heart-o" aria-hidden="true"></i>|| Find out more about <a href="https://colorlib.com" target="_blank">Haegen Tech Remote Lab Facilities</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,214 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>About Us</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: ivory; 
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 0.5%;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 100%;/* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+  color: white;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: initial;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height:100% ; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+  height: auto;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 5px ;
+  text-align: center;
+  color: lightgreen;
+
+  height:24px;  
+  width: 99%;  
+  background-position: 10% 10%;
+  position: fixed;
+   bottom: 10%;
+
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+</head>
+
+<body>
+    <br>
+     
+    
+    <!-- ##### Breadcumb Area Start ##### -->
+                    <div class="text-center">
+                        <h2 style="margin-left: 50%; color: violet;" >About us</h2>
+                    </div>
+     
+    <!-- ##### Breadcumb Area End ##### -->
+    <!-- ##### Contact Area Start ##### -->
+    <nav class="contact-area section-padding-0-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h3 style="margin-left: 20px">Contact Us</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-form-area">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <input type="text" class="form-control" id="name" placeholder="Name" style="margin-left: 20px">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <input type="email" class="form-control" id="email" placeholder="E-mail" style="margin-left: 20px">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" style="margin-left: 20px">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message" style="margin-left: 20px"></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn delicious-btn mt-30" type="submit" style="margin-left: 20px">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ##### Contact Area End ##### -->
+
+    <!-- ##### About Area Start ##### -->
+    <article class="about-area section-padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h3 style="margin-left: 20px">Who we are and what we do?</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h6 class="sub-heading pb-5" style="margin-left: 20px">we do</h6>
+
+                    <p class="text-center" style="margin-left: 20px">Lwe do</p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                    <img class="mb-70" src="img/bg-img/about.png" alt="">
+                    <p class="text-center" style="margin-left: 20px">we do.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- ##### About Area End ##### -->
+
+    
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100 d-flex flex-wrap align-items-center justify-content-between">
+                    <!-- Footer Social Info -->
+                     
+                    <!-- Footer Logo -->
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                    </div>
+                    <!-- Copywrite -->
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Haegen Tech 16300, Bangi University Kebangsaang Malaysia<i class="fa fa-heart-o" aria-hidden="true"></i>|| Find out more about <a href="https://colorlib.com" target="_blank">Haegen Tech Remote Lab Facilities</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
